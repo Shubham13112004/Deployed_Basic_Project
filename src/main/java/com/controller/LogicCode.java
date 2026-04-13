@@ -20,10 +20,10 @@ import java.util.Map;
 public class LogicCode extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    private final String url = "jdbc:postgresql://localhost:5432/logins";
-    private final String user = "postgres"; 
-    private final String password = "9657";
-
+ // Replace your old local variables with these:
+    private final String url = "jdbc:postgresql://ep-lively-poetry-a1wwois9-pooler.ap-southeast-1.aws.neon.tech/neondb?sslmode=require";
+    private final String user = "neondb_owner"; 
+    private final String password = "npg_eAJy70ZdLMxh";
     // 1. SELECT OPERATION (Display on JSP)
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Map<String, String>> userList = new ArrayList<>();
